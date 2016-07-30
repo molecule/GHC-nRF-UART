@@ -51,8 +51,6 @@
         android:text="Connect"
         android:background="@drawable/button_shape"
         android:textColor="@color/black"/>
-
-        <
     </RelativeLayout>
 
     <TextView
