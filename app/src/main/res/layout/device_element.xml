@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
     /*
 Copyright (c) 2015, Nordic Semiconductor
 
@@ -34,16 +33,15 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="6dp" 
-    android:textColor="@color/black"
-    >
+    android:padding="6dp"
+    android:textColor="@color/black">
 
     <TextView
         android:id="@+id/paired"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         android:text="@string/paired"
         android:textSize="12dp" />
 

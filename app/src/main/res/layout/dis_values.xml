@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      /*
 Copyright (c) 2015, Nordic Semiconductor
 
@@ -33,83 +32,72 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/SystemId"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:text="@string/SystemId" >
-    </TextView>
+        android:text="@string/SystemId"></TextView>
 
     <TextView
         android:id="@+id/ManufactureId"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ManufactureId" >
-    </TextView>
+        android:text="@string/ManufactureId"></TextView>
 
     <TextView
         android:id="@+id/OrgId"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/OrgId" >
-    </TextView>
+        android:text="@string/OrgId"></TextView>
 
     <TextView
         android:id="@+id/ModelNumber"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ModelNumber" >
-    </TextView>
+        android:text="@string/ModelNumber"></TextView>
 
     <TextView
         android:id="@+id/SerialNumber"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/SerialNumber" >
-    </TextView>
+        android:text="@string/SerialNumber"></TextView>
 
     <TextView
         android:id="@+id/FirmwareRevision"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/FirmwareRevision" >
-    </TextView>
+        android:text="@string/FirmwareRevision"></TextView>
 
     <TextView
         android:id="@+id/HardwareRevision"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/HardwareRevision" >
-    </TextView>
+        android:text="@string/HardwareRevision"></TextView>
 
     <TextView
         android:id="@+id/SoftwareRevision"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/SoftwareRevision" >
-    </TextView>
+        android:text="@string/SoftwareRevision"></TextView>
 
     <TextView
         android:id="@+id/ManufactureName"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ManufactureName" >
-    </TextView>
+        android:text="@string/ManufactureName"></TextView>
 
     <TextView
         android:id="@+id/RegCertDataList"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/RegCertDataList" >
-    </TextView>
+        android:text="@string/RegCertDataList"></TextView>
 
     <TextView
         android:id="@+id/BatteryLevel"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/BatteryLevel" >
-    </TextView>
+        android:text="@string/BatteryLevel"></TextView>
 
 </LinearLayout>

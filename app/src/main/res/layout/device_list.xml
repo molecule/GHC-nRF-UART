@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
 Copyright (c) 2015, Nordic Semiconductor
 
@@ -34,7 +33,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -46,19 +45,19 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:layout_margin="10dp"
             android:paddingLeft="12dp"
             android:paddingRight="50dp"
-            android:layout_margin="10dp"
             android:text="@string/select_device"
             android:textColor="@color/black"
             android:textSize="15dip" />
 
         <!-- just draw a grey line -->
         <View
-          android:layout_height="2dp"
-          android:background="@android:color/darker_gray"
-          android:layout_width="match_parent"
-          android:layout_below="@+id/title_devices"/>
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/title_devices"
+            android:background="@android:color/darker_gray" />
 
         <ImageView
             android:id="@+id/about"
@@ -67,9 +66,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true" />
     </RelativeLayout>
-    <LinearLayout android:layout_width="fill_parent"
+
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical">
+
         <ListView
             android:id="@+id/new_devices"
             android:layout_width="fill_parent"
@@ -85,9 +87,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
         <!-- just draw a grey line -->
         <View
-          android:layout_height="1dp"
-          android:background="@android:color/darker_gray"
-          android:layout_width="match_parent"/>
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
 
         <Button
             android:id="@+id/btn_cancel"
@@ -95,7 +97,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
-            android:text="@android:string/cancel"
-            android:background="@drawable/button_shape"/>
+            android:background="@drawable/button_shape"
+            android:text="@android:string/cancel" />
     </LinearLayout>
 </LinearLayout>
