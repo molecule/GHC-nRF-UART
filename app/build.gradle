@@ -4,7 +4,7 @@ android {
     buildToolsVersion "22.0.1"
     defaultConfig {
         applicationId 'com.ghc.shindig'
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 22
     }
     buildTypes {
@@ -19,4 +19,5 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
 }

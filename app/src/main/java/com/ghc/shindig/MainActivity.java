@@ -57,10 +57,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
+import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
+import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
@@ -192,6 +197,26 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
       }
     };
     editText.setOnEditorActionListener(exampleListener);
+
+
+    // in Activity Context
+    ImageView icon = new ImageView(this); // Create an icon
+    icon.setImageDrawable(getDrawable(R.drawable.paired));
+
+    FloatingActionButton actionButton = new FloatingActionButton.Builder(this)
+        .setContentView(icon)
+        .build();
+
+    SubActionButton.Builder itemBuilder = new SubActionButton.Builder(this);
+    // repeat many times:
+    ImageView itemIcon = new ImageView(this);
+    itemIcon.setImageDrawable(getDrawable(R.drawable.close));
+    SubActionButton button1 = itemBuilder.setContentView(itemIcon).build();
+
+    FloatingActionMenu actionMenu = new FloatingActionMenu.Builder(this)
+        .addSubActionView(button1)
+        .attachTo(actionButton)
+        .build();
 
 
   }
