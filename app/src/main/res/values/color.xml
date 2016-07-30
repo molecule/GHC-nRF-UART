@@ -3,4 +3,20 @@
   <item name="mint_green" type="color">#BEE4CE</item>
   <item name="dark_blue" type="color">#1a468d</item>
   <item name="light_blue" type="color">#1F52A4</item>
+
+  <item name="qcom_dark_blue" type="color">#002D72</item>
+  <item name="qcom_blue" type="color">#0033A0</item>
+  <item name="qcom_light_blue" type="color">#41B6E6</item>
+  <item name="qcom_dark_aqua" type="color">#006269</item>
+  <item name="qcom_aqua" type="color">#0096A9</item>
+  <item name="qcom_light_aqua" type="color">#9BD3DD</item>
+  <item name="qcom_dark_violet" type="color">#642E6B</item>
+  <item name="qcom_violet" type="color">#7A4183</item>
+  <item name="qcom_light_violet" type="color">#C6007E</item>
+  <item name="qcom_dark_red" type="color">#B1181E</item>
+  <item name="qcom_red" type="color">#E2231A</item>
+  <item name="qcom_light_red" type="color">#F26C56</item>
+  <item name="qcom_dark_orange" type="color">#D14124</item>
+  <item name="qcom_orange" type="color">#EA7600</item>
+  <item name="qcom_light_orange" type="color">#FFB700</item>
 </resources>
