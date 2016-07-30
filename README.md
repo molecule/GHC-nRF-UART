@@ -1,12 +1,8 @@
-# Android-nRF-UART
+#GHC-nRF-UART
 
-nRF UART app can be used to connect to Bluetooth® Smart devices running a custom Nordic Semiconductor UART service. When connected, the app can send and receive ASCII and UTF-8 text strings. 
+This app is based on the [Android-nRF-UART](https://github.com/NordicSemiconductor/Android-nRF-UART) app created and maintained by Nordic Semiconductor. It is based on version 2.0.
 
-This app works with the ble_app_uart project in the nRF51 SDK and the Bluetooth Smart SDK for Arduino. 
-
-This app created as a demonstration for handling 128 bit proprietary UUID service and characteristics. 
-
-The current version is 2.0. 
+This app pairs with up to 7 BLE devices, sending ASCII and UTF-8 text strings to the paired BLE device running a custom Nordic Semiconductor UART service.
 
 This source code can be compiled with Android Studio and Gradle. 
 
