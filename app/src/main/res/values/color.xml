@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <item name="mint_green" type="color">#BEE4CE</item>
+  <item name="dark_blue" type="color">#1a468d</item>
+  <item name="light_blue" type="color">#1F52A4</item>
+</resources>
