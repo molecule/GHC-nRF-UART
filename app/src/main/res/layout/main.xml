@@ -26,8 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:text="@string/paired_with"
-        android:textStyle="bold"
-        android:textSize="24dp"/>
+        android:textSize="24dp"
+          android:textColor="@color/qcom_light_blue"/>
       <ListView
         android:id="@+id/deviceNamesList"
         android:layout_toRightOf="@id/deviceLabel"
@@ -38,7 +38,8 @@
         android:layout_marginTop="10dp"
         android:textSize="10dp"
         android:minHeight="80dp"
-        android:maxHeight="80dp"/>
+        android:maxHeight="80dp"
+          android:textColor="@color/qcom_light_blue"/>
       <Button
         android:id="@+id/btn_select"
         android:layout_alignParentRight="true"
@@ -49,13 +50,13 @@
         android:padding="12dp"
         android:text="Connect"
         android:background="@drawable/button_shape"
-        android:textColor="@color/whitegrey"/>
+        android:textColor="@color/black"/>
     </RelativeLayout>
 
     <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:paddingTop="150dp"
+      android:paddingTop="80dp"
       android:text="ENTER QUESTION ANSWERS"
       android:textSize="64dp"/>
 
