@@ -51,19 +51,21 @@
         android:text="Connect"
         android:background="@drawable/button_shape"
         android:textColor="@color/black"/>
+
+        <
     </RelativeLayout>
 
     <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:paddingTop="80dp"
-      android:text="ENTER QUESTION ANSWERS"
+      android:text="Question Quest"
       android:textSize="64dp"/>
 
     <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Enter the question answers in any order. Refer to your badge for results."
+      android:text="Enter the question answers in any order."
       android:textSize="32dp"
       android:gravity="center_horizontal"/>
 
@@ -96,7 +98,7 @@
         android:text="Enter"
         android:textSize="32dp"
         android:background="@drawable/button_shape"
-        android:textColor="@color/whitegrey"
+        android:textColor="@color/black"
         android:gravity="center"/>
     </LinearLayout>
 

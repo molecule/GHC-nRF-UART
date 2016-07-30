@@ -2,14 +2,14 @@
   <item android:bottom="32dp">
     <shape android:shape="rectangle" >
       <size android:height="32dp" />
-      <solid android:color="@color/qcom_orange" />
+      <solid android:color="@color/qcom_violet" />
     </shape>
   </item>
 
   <item android:top="32dp">
     <shape android:shape="rectangle" >
       <size android:height="32dp" />
-      <solid android:color="@color/qcom_light_orange" />
+      <solid android:color="@color/qcom_dark_violet" />
     </shape>
   </item>
 </layer-list>
