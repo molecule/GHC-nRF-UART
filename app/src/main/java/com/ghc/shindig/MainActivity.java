@@ -57,13 +57,13 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
@@ -203,21 +203,66 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
     ImageView icon = new ImageView(this); // Create an icon
     icon.setImageDrawable(getDrawable(R.drawable.paired));
 
-    FloatingActionButton actionButton = new FloatingActionButton.Builder(this)
-        .setContentView(icon)
-        .build();
+    //RelativeLayout topLayout = (RelativeLayout) findViewById(R.id.topLayout);
+    Button centerActionButton = (Button) findViewById(R.id.centerActionButton);
 
     SubActionButton.Builder itemBuilder = new SubActionButton.Builder(this);
     // repeat many times:
-    ImageView itemIcon = new ImageView(this);
-    itemIcon.setImageDrawable(getDrawable(R.drawable.close));
-    SubActionButton button1 = itemBuilder.setContentView(itemIcon).build();
+    ImageView itemIcon0 = new ImageView(this);
+    itemIcon0.setImageDrawable(getDrawable(R.drawable.close));
+    //SubActionButton button0 = itemBuilder.setContentView(itemIcon0).build();
+    ImageView itemIcon1 = new ImageView(this);
+    itemIcon1.setImageDrawable(getDrawable(R.drawable.close));
+    //SubActionButton button1 = itemBuilder.setContentView(itemIcon1).build();
 
-    FloatingActionMenu actionMenu = new FloatingActionMenu.Builder(this)
-        .addSubActionView(button1)
-        .attachTo(actionButton)
+    // Add some items to the menu. They are regular views as well!
+    TextView button0 = new TextView(this); button0.setText("0"); button0.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView button1 = new TextView(this); button1.setText("1"); button1.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView button2 = new TextView(this); button2.setText("2"); button2.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView button3 = new TextView(this); button3.setText("3"); button3.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView d = new TextView(this); d.setText("4"); d.setBackgroundResource(android.R.drawable.btn_default_small);
+    d.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Log.e(TAG, "She wants the dddddd");
+      }
+    });
+    TextView e = new TextView(this); e.setText("5"); e.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView f = new TextView(this); f.setText("6"); f.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView g = new TextView(this); g.setText("7"); g.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView h = new TextView(this); h.setText("8"); h.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView button9 = new TextView(this); button9.setText("9"); button9.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView button10 = new TextView(this); button10.setText("10"); button10.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView button11 = new TextView(this); button11.setText("11"); button11.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView button12 = new TextView(this); button12.setText("12"); button12.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView button13 = new TextView(this); button13.setText("13"); button13.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView button14 = new TextView(this); button14.setText("14"); button14.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView button15 = new TextView(this); button15.setText("15"); button15.setBackgroundResource(android.R.drawable.btn_default_small);
+    TextView button16 = new TextView(this); button16.setText("16"); button16.setBackgroundResource(android.R.drawable.btn_default_small);
+    FrameLayout.LayoutParams tvParams = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+    //a.setLayoutParams(tvParams);
+    //b.setLayoutParams(tvParams);
+    //c.setLayoutParams(tvParams);
+    d.setLayoutParams(tvParams);
+    e.setLayoutParams(tvParams);
+    f.setLayoutParams(tvParams);
+    g.setLayoutParams(tvParams);
+    h.setLayoutParams(tvParams);
+
+    FloatingActionMenu circleMenu = new FloatingActionMenu.Builder(this)
+        .setStartAngle(0) // A whole circle!
+        .setEndAngle(360)
+        .setRadius(getResources().getDimensionPixelSize(R.dimen.radius_large))
+        //.addSubActionView(a)
+        //.addSubActionView(b)
+        //.addSubActionView(c)
+        .addSubActionView(d)
+        .addSubActionView(e)
+        .addSubActionView(f)
+        .addSubActionView(g)
+        .addSubActionView(h)
+        .attachTo(centerActionButton)
         .build();
-
 
   }
 
