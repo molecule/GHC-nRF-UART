@@ -150,6 +150,8 @@
             android:id="@+id/material_design_floating_action_menu_item1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/qcom_violet"
+            fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 0"
             fab:fab_size="mini" />
@@ -158,6 +160,8 @@
             android:id="@+id/material_design_floating_action_menu_item2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/qcom_violet"
+            fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="Menu Item 2"
             fab:fab_size="mini" />
@@ -166,6 +170,8 @@
             android:id="@+id/material_design_floating_action_menu_item3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/qcom_violet"
+            fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="Menu Item 3"
             fab:fab_size="mini" />
