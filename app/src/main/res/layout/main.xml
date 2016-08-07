@@ -53,12 +53,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/deviceLabel"
             android:maxHeight="80dp"
             android:minHeight="80dp"
             android:text="@string/no_device"
-            android:textColor="@color/qcom_light_blue"
-            android:textSize="10dp" />
+            android:textSize="10sp" />
 
     </LinearLayout>
     <LinearLayout
