@@ -198,8 +198,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
     }
   }
   public void flashLED(View v) {
-    Log.e(TAG, Integer.toString(v.getId()));
-
+    sendMessage("LED"+v.getTag().toString());
   }
   //UART service connected/disconnected
   private ServiceConnection mServiceConnection = new ServiceConnection() {

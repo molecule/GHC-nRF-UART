@@ -173,6 +173,7 @@
             android:src="@drawable/paired"
             fab:fab_label="LED 17"
             fab:fab_size="mini"
+            android:tag="17"
             android:onClick="flashLED"/>
 
         <com.github.clans.fab.FloatingActionButton
@@ -183,7 +184,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 16"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="16"
+            android:onClick="flashLED"/>
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item15"
@@ -193,7 +196,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 15"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="15"
+            android:onClick="flashLED"/>
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item14"
@@ -203,7 +208,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 14"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="14"
+            android:onClick="flashLED"/>
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item13"
@@ -213,7 +220,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 13"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="13"
+            android:onClick="flashLED"/>
 
         <com.github.clans.fab.FloatingActionButton
         android:id="@+id/material_design_floating_action_menu_item12"
@@ -223,7 +232,9 @@
         fab:fab_colorPressed="@color/qcom_light_violet"
         android:src="@drawable/paired"
         fab:fab_label="LED 12"
-        fab:fab_size="mini" />
+        fab:fab_size="mini"
+        android:tag="12"
+        android:onClick="flashLED"/>
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item11"
@@ -233,7 +244,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 11"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="11"
+            android:onClick="flashLED"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item10"
             android:layout_width="wrap_content"
@@ -242,7 +255,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 10"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="10"
+            android:onClick="flashLED"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item9"
             android:layout_width="wrap_content"
@@ -251,7 +266,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 9"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="9"
+            android:onClick="flashLED"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item8"
             android:layout_width="wrap_content"
@@ -260,7 +277,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 8"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="8"
+            android:onClick="flashLED"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item7"
             android:layout_width="wrap_content"
@@ -269,7 +288,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 7"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="7"
+            android:onClick="flashLED"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item6"
             android:layout_width="wrap_content"
@@ -278,7 +299,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 6"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="6"
+            android:onClick="flashLED"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item5"
             android:layout_width="wrap_content"
@@ -287,7 +310,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 5"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="5"
+            android:onClick="flashLED"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item4"
             android:layout_width="wrap_content"
@@ -296,7 +321,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 4"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="4"
+            android:onClick="flashLED"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item3"
             android:layout_width="wrap_content"
@@ -305,7 +332,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 3"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="3"
+            android:onClick="flashLED"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item2"
             android:layout_width="wrap_content"
@@ -314,7 +343,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 2"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="2"
+            android:onClick="flashLED"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item1"
             android:layout_width="wrap_content"
@@ -323,7 +354,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 1"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="1"
+            android:onClick="flashLED"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item0"
             android:layout_width="wrap_content"
@@ -332,7 +365,9 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 0"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:tag="0"
+            android:onClick="flashLED"/>
 
 
     </com.github.clans.fab.FloatingActionMenu>
