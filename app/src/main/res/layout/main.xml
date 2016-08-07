@@ -163,7 +163,7 @@
             fab:fab_colorNormal="@color/qcom_violet"
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
-            fab:fab_label="Menu Item 2"
+            fab:fab_label="LED 1"
             fab:fab_size="mini" />
 
         <com.github.clans.fab.FloatingActionButton
@@ -173,7 +173,7 @@
             fab:fab_colorNormal="@color/qcom_violet"
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
-            fab:fab_label="Menu Item 3"
+            fab:fab_label="LED 2"
             fab:fab_size="mini" />
     </com.github.clans.fab.FloatingActionMenu>
 
