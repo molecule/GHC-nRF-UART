@@ -172,7 +172,8 @@
             fab:fab_colorPressed="@color/qcom_light_violet"
             android:src="@drawable/paired"
             fab:fab_label="LED 17"
-            fab:fab_size="mini" />
+            fab:fab_size="mini"
+            android:onClick="flashLED"/>
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/material_design_floating_action_menu_item16"

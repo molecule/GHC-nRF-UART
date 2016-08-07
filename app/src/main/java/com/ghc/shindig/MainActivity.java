@@ -151,27 +151,8 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
       @Override
       public void onClick(View v) {
         EditText editText = (EditText) findViewById(R.id.sendText);
-        final String message = editText.getText().toString().toUpperCase();
-        byte[] value;
-        try {
-          //send data to service
-          value = message.getBytes("UTF-8");
-          mService.writeRXCharacteristic(value);
-          //Update the log with time stamp
-          final String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
-          runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-              listAdapter.add("[" + currentDateTimeString + "] TX: " + message);
-              messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
-              edtMessage.setText("");
-            }
-          });
-
-        } catch (UnsupportedEncodingException e) {
-          // TODO Auto-generated catch block
-          e.printStackTrace();
-        }
+        String message = editText.getText().toString().toUpperCase();
+        sendMessage(message);
       }
     });
 
@@ -192,10 +173,34 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
       }
     };
     editText.setOnEditorActionListener(exampleListener);
-
-
   }
 
+  private void sendMessage(final String message) {
+    byte[] value;
+    try {
+      //send data to service
+      value = message.getBytes("UTF-8");
+      mService.writeRXCharacteristic(value);
+      //Update the log with time stamp
+      final String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
+      runOnUiThread(new Runnable() {
+        @Override
+        public void run() {
+          listAdapter.add("[" + currentDateTimeString + "] TX: " + message);
+          messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
+          edtMessage.setText("");
+        }
+      });
+
+    } catch (UnsupportedEncodingException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+  }
+  public void flashLED(View v) {
+    Log.e(TAG, Integer.toString(v.getId()));
+
+  }
   //UART service connected/disconnected
   private ServiceConnection mServiceConnection = new ServiceConnection() {
     public void onServiceConnected(ComponentName className, IBinder rawBinder) {
