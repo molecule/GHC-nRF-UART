@@ -9,3 +9,9 @@ This source code can be compiled with Android Studio and Gradle.
 ### Note
 - Android 4.3 or later is required.
 - Android Studio supported 
+
+
+### Add these lines to /system/etc/init.qcom.post_boot.sh to auto-launch the app:
+# Launch GHC app on start-up
+am start -a android.intent.action.MAIN -n com.ghc.shindig/.MainActivity
+# turn on bt
